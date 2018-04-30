@@ -4,6 +4,7 @@ Simple app that shows you how many resources your electron apps are costing you 
 
 <img src="screenshot.png" width="600"/>
 
+[DOWNLOAD](https://github.com/genu/electrocute/releases/download/v1.0.0/electrocute.dmg) (MAC)
 
 ## Developing
 
