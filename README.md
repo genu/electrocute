@@ -1,4 +1,4 @@
-# Bible Helper
+# Electrocute
 
 Simple app that shows you how many resources your electron apps are costing you (Running apps).
 
