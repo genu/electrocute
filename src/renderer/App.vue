@@ -55,7 +55,7 @@ export default {
     this.getApps();
     setInterval(() => {
       this.getApps();
-    }, 3000);
+    }, 500);
   },
   computed: {
     groupedProcesses() {
