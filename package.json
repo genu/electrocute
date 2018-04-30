@@ -1,7 +1,7 @@
 {
   "name": "electrocute",
   "productName": "electrocute",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "author": "Eugen Istoc <eugenistoc@gmail.com>",
   "description": "An electron process manager",
   "license": null,
