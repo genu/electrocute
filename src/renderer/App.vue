@@ -33,9 +33,6 @@
 .p5 {
   padding: 5px;
 }
-.pull-right {
-  float: right;
-}
 </style>
 
 <script>
