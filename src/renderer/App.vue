@@ -1,15 +1,12 @@
 <template lang="pug">
   ph-window
     ph-toolbar(type="header" title="Running processes")
-    ph-window-content
-      table.table-striped
-        thead
-          tr
-            th Electron Applications
-            th Processes
-            th Memory
-            th CPU
-            th
+    ph-window-content: table.table-striped: thead: tr
+        th Electron Applications
+        th Processes
+        th Memory
+        th CPU
+        th
         tr(v-for="(processes, app) in groupedProcesses")
           td {{app}}
           td {{processes.length}}
@@ -19,17 +16,14 @@
             ph-button(@click.native="kill(processes)" size="mini" type="default")
               ph-icon(icon="flash")
               | Kill
-    ph-toolbar(type="footer")
-      div.p5
+    ph-toolbar(type="footer"): div.p5
         strong Memory Usage:
         | &nbsp; {{getStat(processes, 'memory') | formatSize}} of {{totalmem | formatSize}} &nbsp;
         strong CPU Usage:
         | &nbsp; {{getStat(processes, 'cpu') | round(2)}} %
         ph-button-group.pull-right
-          ph-button(size="mini" @click.native="openRepo()")
-            ph-icon(icon="github")
-          ph-button(size="mini" @click.native="exit()")
-            span &nbsp;Exit
+          ph-button(size="mini" @click.native="openRepo()"): ph-icon(icon="github")
+          ph-button(size="mini" @click.native="exit()"): span &nbsp;Exit
 </template>
 
 <style lang="scss">
