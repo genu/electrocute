@@ -2,7 +2,7 @@
 
 Simple app that shows you how many resources your electron apps are costing you (Running apps).
 
-<img src="screenshot.png" width="500"/>
+<img src="screenshot.png" width="600"/>
 
 
 ## Developing
